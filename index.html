@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">LetsCode Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </header>
+      <form id="survey-form">
+            <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+            <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your Email"
+        required></label>
+            <label id="number-label">Age: <input id= "number" type="number" min="18" placeholder="Age" max="120" required></label>
+        <p>Which option best describes your current role?</p>
+           <div class="role">
+            <select id="dropdown" required>
+                <option value="" disabled selected>Select a role</option>
+                <option value="1" >Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Part time Job</option>
+                <option value="4">Unemployed</option>
+                <option value="5">Prefer not to say</option>
+                <option value="6">Other</option>
+            </select><br>
+            <textarea placeholder="If other, please state the role"></textarea>
+           </div>
+        <p>Would you recommend LetsCode to a friend?</p>
+          <div class="input-radio">
+            <label for="definitely"><input value="definitely" id="definitely" type="radio" name="options">Definitely </label>
+            <label for="maybe"> <input value="maybe" id="maybe" type="radio" name="options">Maybe</label>
+            <label for="not-sure"><input value="not-sure" id="not-sure" type="radio" name="options">Not sure</label>
+            <label for="no"><input value="no" id="no" type="radio" name="options">No</label>
+          </div>
+        
+        <p>What is your favourite feature of LetsCode?</p>
+        <select id="dropdown2" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="1" >Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+            <option value="5">None of the above</option>
+        </select>
+        <p>What would you like to see improved?</p>
+         <div class="input-checkbox">
+            <label><input value="front-end" type="checkbox">Front-end Projects</label>
+            <label><input value="back-end" type="checkbox">Back-end Projects</label>
+            <label><input value="datavis" type="checkbox">Data visualization</label>
+            <label><input value="challenges" type="checkbox">Challenges</label>
+            <label><input value="opensource" type="checkbox">Open Source Community</label>
+            <label><input value="video" type="checkbox">Videos</label>
+            <label><input value="forum" type="checkbox">Forum</label>
+            <label><input value="addcourses" type="checkbox">Additional Courses</label>
+            <label><input value="helprooms" type="checkbox">Help rooms</label>
+         </div>
+        
+        <p>Any comments or suggestions?</p>
+        <textarea id="comment" name="comment" placeholder="Enter comment here..."></textarea><br>
+    <input id="submit" type="submit" value="Submit">
+        </div>
+      </form>
+  </body>
+</html>
