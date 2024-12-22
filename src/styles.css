@@ -16,7 +16,7 @@ h1 {
 /*body
 ***************************************************************************/
 html {
-  background: url(Images_folder/image2.jpg) no-repeat center fixed; /*photo from unsplash*/
+  background: url(/Images_folder/image2.jpg) no-repeat center fixed; /*photo from unsplash*/
   background-size: cover;
 }
 form {
